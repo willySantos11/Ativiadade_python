@@ -1,23 +1,4 @@
 opcao = 0
-frances = 0
-integral = 0
-doce_liso = 0
-doce_farofa = 0
-forma = 0
-
-valor_frances = 0
-valor_integral = 0
-valor_doce_liso = 0
-valor_doce_farofa = 0
-valor_forma = 0
-# Valor unitário de cada pão  
-valor_unidade_frances = 1.04
-valor_unidade_integral = 1.04
-valor_unidade_doce_liso = 1.08
-valor_unidade_doce_farofa = 1.11 
-valor_unidade_forma = 0.95
-
-
 while opcao != 6:
     print("==== PADARIA ====")
     print(" ---MENU---")
@@ -32,22 +13,37 @@ while opcao != 6:
     opcao = int(input("Escolha a sua opção: "))
     
     if opcao == 1:
+      frances = 0
+      valor_frances = 0  
+      valor_unidade_frances = 1.04
       frances = int(input("Informe a quantidade de pão frances você deseja: "))
       valor_frances = frances * 1.04
       
     elif opcao == 2:
+      integral = 0
+      valor_integral = 0
+      valor_unidade_integral = 1.04
       integral = int(input("Informe a quantidade de pão integral você deseja: "))
       valor_integral = integral * 1.04
       
     elif opcao == 3:
+      doce_liso = 0
+      valor_doce_liso = 0
+      valor_unidade_doce_liso = 1.08
       doce_liso = int(input("Informe a quantidade de pão doce liso você deseja: "))
       valor_doce_liso = doce_liso * 1.08
       
     elif opcao == 4:
+       doce_farofa = 0
+       valor_doce_farofa = 0
+       valor_unidade_doce_farofa = 1.11 
        doce_farofa = int(input("Informe a quantidade de pão doce farofa você deseja: "))
        valor_doce_farofa = doce_farofa * 1.11
       
     elif opcao == 5:
+       forma = 0
+       valor_forma = 0
+       valor_unidade_forma = 0.95
        forma = int(input("Informe a quantidade de pão forma você deseja: "))
        valor_forma = forma * 0.95
       
